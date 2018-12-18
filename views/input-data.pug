@@ -1,0 +1,16 @@
+extends base.pug
+
+block content
+    img(src=`https://passhash.internetbrands.com/logo.png`)
+    h1 Internet Brands Online SSH key generator
+    form(action="/generate", method="post")
+        p Email: 
+        input(type="email", name="E-mail", placeholder='Enter your IB email', required="required") 
+        p Passphrase: 
+        input(type="password", name="password", placeholder='Enter a passphrase (Optional)')
+        input(type="submit", name="Done", value='Generate Keys', accesskey='g')
+        br
+        br
+        
+
+
